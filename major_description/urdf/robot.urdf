@@ -1,0 +1,254 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- OnShape https://cad.onshape.com/documents/d065beb84cb63753dff0064e/w/f5d27d628c392975fe916747/e/7d632b9468394598b7c3821f -->
+<robot name="major">
+    <!-- Link amr_v2_v1 -->
+    <link name="dummy_base">
+    
+    <visual>
+        <geometry>
+            <box size="0.01 0.01 0.01"/>
+        </geometry>
+        <material>
+            <color rgba="1 0 0 1"/>
+        </material>
+    </visual>
+</link>
+
+<joint name="dummy_base_joint" type="fixed">
+    <parent link="dummy_base"/>
+    <child link="amr_v2_v1"/> <!-- Replace with your actual root link -->
+</joint>
+
+    <link name="amr_v2_v1">
+        <inertial>
+            <origin xyz="0.00739962 0.0220569 0.125618" rpy="0 0 0"/>
+            <mass value="12.6756"/>
+            <inertia ixx="0.461222" ixy="0.00233137" ixz="0.000418417" iyy="1.02885" iyz="0.00269257" izz="1.09332"/>
+        </inertial>
+        <!-- Part castor__3 -->
+        <visual>
+            <origin xyz="-0.242274 -0.210224 0.0264725" rpy="3.31022e-16 -8.4693e-15 1.86239e-45"/>
+            <geometry>
+                <mesh filename="package://castor__3.stl"/>
+            </geometry>
+            <material name="castor__3_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.242274 -0.210224 0.0264725" rpy="3.31022e-16 -8.4693e-15 1.86239e-45"/>
+            <geometry>
+                <mesh filename="package://castor__3.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part castor__1 -->
+        <visual>
+            <origin xyz="-0.242274 0.249776 0.0264725" rpy="2.2e-16 -2.27674e-77 -1.23175e-32"/>
+            <geometry>
+                <mesh filename="package://castor__1.stl"/>
+            </geometry>
+            <material name="castor__1_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.242274 0.249776 0.0264725" rpy="2.2e-16 -2.27674e-77 -1.23175e-32"/>
+            <geometry>
+                <mesh filename="package://castor__1.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part castor__1_2 -->
+        <visual>
+            <origin xyz="-0.243024 0.247298 0.0278057" rpy="0.0560947 5.79026e-24 -1.81864e-08"/>
+            <geometry>
+                <mesh filename="package://castor__1.2.stl"/>
+            </geometry>
+            <material name="castor__1_2_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.243024 0.247298 0.0278057" rpy="0.0560947 5.79026e-24 -1.81864e-08"/>
+            <geometry>
+                <mesh filename="package://castor__1.2.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part camera -->
+        <visual>
+            <origin xyz="0.00772622 0.253626 0.0554725" rpy="1.12782e-30 8.46329e-63 -1.32043e-32"/>
+            <geometry>
+                <mesh filename="package://camera.stl"/>
+            </geometry>
+            <material name="camera_material">
+                <color rgba="0.901961 0.921569 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.00772622 0.253626 0.0554725" rpy="1.12782e-30 8.46329e-63 -1.32043e-32"/>
+            <geometry>
+                <mesh filename="package://camera.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part root -->
+        <visual>
+            <origin xyz="0.00772622 0.0197758 0.0229725" rpy="-7.66381e-31 -0 3.14159"/>
+            <geometry>
+                <mesh filename="package://root.stl"/>
+            </geometry>
+            <material name="root_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.00772622 0.0197758 0.0229725" rpy="-7.66381e-31 -0 3.14159"/>
+            <geometry>
+                <mesh filename="package://root.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part lidar -->
+        <visual>
+            <origin xyz="0.00772622 0.0213931 0.352473" rpy="-6.28467e-32 -7.78273e-15 -1.27647e-61"/>
+            <geometry>
+                <mesh filename="package://lidar.stl"/>
+            </geometry>
+            <material name="lidar_material">
+                <color rgba="0.627451 0.627451 0.627451 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.00772622 0.0213931 0.352473" rpy="-6.28467e-32 -7.78273e-15 -1.27647e-61"/>
+            <geometry>
+                <mesh filename="package://lidar.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part motor_r -->
+        <visual>
+            <origin xyz="0.313226 0.0197758 0.0579725" rpy="3.14159 -3.88334e-15 3.14159"/>
+            <geometry>
+                <mesh filename="package://motor_r.stl"/>
+            </geometry>
+            <material name="motor_r_material">
+                <color rgba="0.843137 0.815686 0.752941 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.313226 0.0197758 0.0579725" rpy="3.14159 -3.88334e-15 3.14159"/>
+            <geometry>
+                <mesh filename="package://motor_r.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part castor__2 -->
+        <visual>
+            <origin xyz="0.257726 -0.210224 0.0264725" rpy="2.2e-16 6.87145e-14 4.93847e-44"/>
+            <geometry>
+                <mesh filename="package://castor__2.stl"/>
+            </geometry>
+            <material name="castor__2_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.257726 -0.210224 0.0264725" rpy="2.2e-16 6.87145e-14 4.93847e-44"/>
+            <geometry>
+                <mesh filename="package://castor__2.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part castor -->
+        <visual>
+            <origin xyz="0.258476 0.252694 -0.0587146" rpy="-2.02987 -1.5826e-08 8.96003e-09"/>
+            <geometry>
+                <mesh filename="package://castor.stl"/>
+            </geometry>
+            <material name="castor_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.258476 0.252694 -0.0587146" rpy="-2.02987 -1.5826e-08 8.96003e-09"/>
+            <geometry>
+                <mesh filename="package://castor.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part castor_2 -->
+        <visual>
+            <origin xyz="0.257726 0.249776 0.0264725" rpy="2.2e-16 -2.27674e-77 -1.23175e-32"/>
+            <geometry>
+                <mesh filename="package://castor.2.stl"/>
+            </geometry>
+            <material name="castor_2_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.257726 0.249776 0.0264725" rpy="2.2e-16 -2.27674e-77 -1.23175e-32"/>
+            <geometry>
+                <mesh filename="package://castor.2.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part motor_l -->
+        <visual>
+            <origin xyz="-0.300274 0.0197758 0.0579725" rpy="5.55112e-17 -3.47885e-15 -4.65255e-15"/>
+            <geometry>
+                <mesh filename="package://motor_l.stl"/>
+            </geometry>
+            <material name="motor_l_material">
+                <color rgba="0.843137 0.815686 0.752941 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.300274 0.0197758 0.0579725" rpy="5.55112e-17 -3.47885e-15 -4.65255e-15"/>
+            <geometry>
+                <mesh filename="package://motor_l.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part castor__2_2 -->
+        <visual>
+            <origin xyz="0.258476 -0.212702 0.0278057" rpy="0.0560947 6.87145e-14 -1.81864e-08"/>
+            <geometry>
+                <mesh filename="package://castor__2.2.stl"/>
+            </geometry>
+            <material name="castor__2_2_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.258476 -0.212702 0.0278057" rpy="0.0560947 6.87145e-14 -1.81864e-08"/>
+            <geometry>
+                <mesh filename="package://castor__2.2.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part wheel_r -->
+        <visual>
+            <origin xyz="0.298242 0.0197758 0.0579725" rpy="-2.95991 -3.88334e-15 3.14159"/>
+            <geometry>
+                <mesh filename="package://wheel_r.stl"/>
+            </geometry>
+            <material name="wheel_r_material">
+                <color rgba="0.647059 0.619608 0.6 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.298242 0.0197758 0.0579725" rpy="-2.95991 -3.88334e-15 3.14159"/>
+            <geometry>
+                <mesh filename="package://wheel_r.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part wheel_l -->
+        <visual>
+            <origin xyz="-0.298147 0.0197758 0.0579725" rpy="2.25992 2.02962e-15 3.14159"/>
+            <geometry>
+                <mesh filename="package://wheel_l.stl"/>
+            </geometry>
+            <material name="wheel_l_material">
+                <color rgba="0.647059 0.619608 0.6 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.298147 0.0197758 0.0579725" rpy="2.25992 2.02962e-15 3.14159"/>
+            <geometry>
+                <mesh filename="package://wheel_l.stl"/>
+            </geometry>
+        </collision>
+    </link>
+</robot>
